@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    
+<head>
+	<title>Contact us</title>
+    {% include "head_css.html" %}
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer>
+    </script>
+    
+</head>
+
+<body class="bg_contact">
+    <h3 class="hero-text">ｆｏｌｌｏｗ  ｕｓ ＆ ｓｈａｒｅ：<hr style="height:2px;border-width:0;color:gray;background-color:gray"></h3>
+	<div class="row">
+		<div class="col-sm-4 share" >
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                    Siguenos en FB: Cocina para Todos
+                </a>
+            </div>
+		</div>
+		<div class="col-sm-4 share2">
+            <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @Cocina_para_todos</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="col-sm-4 share1">
+            <g:sharetoclassroom size=40 url="http://google.com"></g:sharetoclassroom>
+        </div>
+	</div>
+	<!-- <div class="hero-text">
+		<h1 style="font-size:80px"> ☾ </h1><br>
+		<h2>for join us</h2>
+	 </div> -->
+</body>
+</html>

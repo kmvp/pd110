@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block head_title %} Bienvenidos | {{ block.super }} {% endblock %}
+	<!-- <title>Hola mundo</title> -->
+</head>
+<body >
+<div>
+	<!-- {% include "navbar.html" %} -->
+{% block jumbotron_content %}
+<div class="row">
+	<div class="col-sm-5">
+		<h1>Cocina para todos</h1>
+		<p class="lead">
+			Un proyecto para principiantes. Recetas de cocina y gastronomía. Las mejores recetas de cocinas, postres, vinos, turismo gastronómico, etc.
+		</p>
+		<p class="lead"></p>
+		<a class="btn btn-lg btn-primary" href="/" role="button">Ver más &raquo;</a>
+	</div>
+	<div class="col-sm-7" style=" width: 560px; height: 315px;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/sx-48ijaFTM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+</div>
+	
+{% endblock %}
+
+<!-- {% block jumbotron %}
+{{ block.super }}
+	
+{% endblock %} -->
+
+{{ titulo }} <br/>
+{{ request.user }} 
+	<!-- variable = {{ abc }} -->
+	<hr/>
+	<br/>
+	<!-- {% if form %} -->
+
+	{% block content %}
+	<div class="row">
+		<div class="col-sm-2">
+			
+		</div>
+		<div class="col-sm-4"><br><br><br>
+			<h2 class="text-align-center">Envianos tus datos.</h2>
+			<p class="lead text-align-center">En breve te enviaremos un correo con nuestro recetario estrella.</p>
+		</div>
+		<div class="col-sm-6 col-xs-12 pull-right">
+			<p class="lead text-align-center"> {{ titulo }} </p>
+			<form method="POST" action=""> {% csrf_token %}
+				<!-- {{ el_form.as_p }} -->
+				{{ form|crispy }}
+				<input class="btn btn-primary" type="submit" name="registrame" value="Inscribirse">
+			</form>
+		</div>
+	</div>
+	
+	
+	<hr/>
+	<div><br>
+		<i><p class="lead text-align-center">Creado con Django &amp; Bootstrap.</p>
+			<p class="lead text-align-center">Código abierto, siempre! ♡ ＜⁄＞</p></i>
+		
+	</div>
+	{% endblock %}
+	<!-- {% endif %} -->
+</div>
+</body>
+</html>

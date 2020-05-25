@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block head_title %} Bienvenidos | {{ block.super }} {% endblock %}
+	<!-- <title>Hola mundo</title> -->
+</head>
+<body class="bg_desayuno">
+<div>
+	<!-- {% include "navbar.html" %} -->
+{% block jumbotron_content %}
+<div class="row">
+	<div class="col-sm-5">
+		<h1>Cocina para todos</h1>
+		<p class="lead">
+			Un proyecto para principiantes. Recetas de cocina y gastronomía. Las mejores recetas de cocinas, postres, vinos, turismo gastronómico, etc.
+		</p>
+		<p class="lead"></p>
+		<a class="btn btn-lg btn-primary" href="/" role="button">Ver más &raquo;</a>
+	</div>
+	<div class="col-sm-7" style=" width: 560px; height: 315px;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/sx-48ijaFTM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+</div>
+	
+{% endblock %}
+
+<!-- {% block jumbotron %}
+{{ block.super }}
+	
+{% endblock %} -->
+
+{{ titulo }} <br/>
+{{ request.user }} 
+	<!-- variable = {{ abc }} -->
+	<hr/>
+	<br/>
+	<!-- {% if form %} -->
+
+    {% block content %}
+    <div class="row">
+        <div class="col-sm-6 recipes">
+            <h1 class="hh1">Sopa Azteca con Chile Pasilla</h1>
+            <p class="pp">Receta de Sopa Azteca con Chile Pasilla.</p>
+            <img class="imd1">
+            <h2 class="h22">Ingredientes</h2>
+            <ul>
+                <li class="lii">2 dientes de ajo</li>
+                <li class="lii">1/2 cebollas blancas, cortada en trozos, para caldo</li>
+                <li class="lii">4 jitomates, asado. para el caldo</li>
+                <li class="lii">2 chiles pasilla, desvenado, sin semillas y remojado, para caldo</li>
+                <li class="lii">8 tazas de caldo de pollo</li>
+                <li class="lii">1 taza de tortillas de maíz, asada al comal</li>
+                <li class="lii">1 taza de tortillas de maíz, cortadas en tiritas y fritas</li>
+                <li class="lii">1 taza de queso fresco, cortado en cubitos </li>
+            </ul>
+            <h2 class="h22">Elaboración (Pasos)</h2>
+            <ol>
+                <li class="lii">Para el caldo, licúa el ajo, la cebolla, el jitomate, el chile pasilla, el chile guajillo, el caldo de pollo, la tortilla y una pizca de sal.</li>
+                <li class="lii">Calienta en una ollita a fuego medio el aceite, fríe la preparación anterior y agrega las ramitas de epazote, cocina el caldo durante 10 minutos para que el jitomate se cueza.</li>
+                <li class="lii">Sirve la preparación en un plato hondo, agrega las tortillas de maíz, el queso fresco, el chile pasilla, el aguacate y un toque de crema ácida. Disfruta.</li>
+            </ol>
+        </div>
+        <div class="col-sm-6 recipes">
+            <h1 class="hh1">Patatas fritas</h1>
+            <p class="pp">Receta de patatas fritas caseras.</p>
+            <img class="imd">
+            <h2 class="h22">Ingredientes</h2>
+            <ul>
+            <li class="lii">3 ó 4 patatas (300g.)</li>
+            <li class="lii">4 dientes de ajo</li>
+            <li class="lii">Aceite de oliva</li>
+            <li class="lii">Sal</li>
+            </ul>
+            <h2 class="h22">Elaboración (Pasos)</h2>
+            <ol>
+            <li class="lii">Calentar aceite en una sartén.</li>
+            <li class="lii">Añadir las patatas cortadas, la sal y los ajos.</li>
+            <li class="lii">Freír al gusto.</li>
+            <li class="lii">Servir en plato.</li>
+            </ol>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="row">
+        <div class="col-sm-6 recipes">
+            <h1 class="hh1">Carnitas Caseras en Olla de Presión</h1>
+            <p class="pp">Receta de Carnitas Caseras en Olla de Presión.</p>
+            <img class="imd2">
+            <h2 class="h22">Ingredientes</h2>
+            <ul>
+                <li class="lii">1 1/2 kilos de manteca de cerdo</li>
+                <li class="lii">1 kilo de costilla de cerdo</li>
+                <li class="lii">1 kilo de carne de cerdo, maciza</li>
+                <li class="lii">1/2 naranjas</li>
+                <li class="lii">1 naranja, cortada por la mitad</li>
+                <li class="lii">1 taza de leche evaporada</li>
+                <li class="lii">1/4 tazas de sal</li>
+                <li class="lii">1 manojo de hierbas de olor</li>
+            </ul>
+            <h2 class="h22">Elaboración (Pasos)</h2>
+            <ol>
+                <li class="lii">En una olla de presión, coloca la manteca y calienta la olla hasta que se funda por completo. Agrega la costilla y la maciza de cerdo.</li>
+                <li class="lii">Agrega el jugo de naranja, la naranja, la leche evaporada, la sal, las hierbas de olor, las pimientas, el ajo y la cebolla.</li>
+                <li class="lii">Cierra la olla y cocina durante 1 hora o hasta que estén perfectamente cocida la carne.</li>
+                <li class="lii">Prepara taquitos de carnitas, acompaña con cilantro, cebolla, salsa verde y limón. </li>
+            </ol>
+        </div>
+        <div class="col-sm-6 recipes">
+            <h1 class="hh1">Tortas Ahogadas de Jalisco</h1>
+            <p class="pp">Receta de Tortas Ahogadas de Jalisco.</p>
+            <img class="imd3">
+            <h2 class="h22">Ingredientes</h2>
+            <ul>
+                <li class="lii">1 litro de agua</li>
+                <li class="lii">5 jitomates</li>
+                <li class="lii">10 chiles de árbol secos</li>
+                <li class="lii">1 cebolla, cortada en trozos</li>
+                <li class="lii">3 dientes de ajo</li>
+                <li class="lii">1/4 tazas de aceite </li>
+            </ul>
+            <h2 class="h22">Elaboración (Pasos)</h2>
+            <ol>
+                <li class="lii">En una ollita calienta el agua y cocina los jitomates con el chile de árbol, la cebolla y el ajo.</li>
+                <li class="lii">Licúa la preparación anterior con un poco de líquido.</li>
+                <li class="lii">Calienta una ollita a fuego medio con el aceite y sofríe la preparación anterior, agrega el laurel, el orégano, el clavo, el comino, sazona con sal a tu gusto y cocina 5 minutos más para que espese ligeramente. Reserva la salsa.</li>
+                <li class="lii">En una tablita corta los birotes retira un poco de migajón y rellena con las carnitas. Sirve en un plato la torta y cubre con la salsa . Agrega un poco de cebollas moradas y salsa roja para acompañar. Disfruta. </li>
+            </ol>
+        </div>
+    </div>
+        
+	<hr/>
+	{% endblock %}
+	<!-- {% endif %} -->
+</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+.text-align-center {
+    text-align: center;
+  }
+
+.position_f {
+  position: fixed;
+}
+
+body {
+    background-image: url("../img/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+.share {
+  text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.share1 {
+  text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.share2 {
+  text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.bg_tnk {
+  background-image: url("../img/tnk2.jpg");
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.bg_contact {
+  background-image: url("../img/bg4.jpg");
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+
+.bg_desayuno {
+  background-image: url("../img/bg4.jpg");
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+.recipes {text-align: center;}
+.hh1 {color:rgb(39, 38, 38); font-size:24px;} 
+.h22 {color:rgb(59, 59, 59); font-size:20px;} 
+.pp, .lii {color:#000; font-size:18px;}
+
+.bg_comida {
+  background-image: url("../img/bg4.jpg");
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+
+.bg_cena {
+  background-image: url("../img/bg4.jpg");
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+
+.imd {
+  background-image: url("../img/d2.jpg");
+  height: 40%;
+  width: 40%;
+}
+.imd1 {
+  background-image: url("../img/d3.jpg");
+  height: 40%;
+  width: 40%;
+}
+.imd2 {
+  background-image: url("../img/d3.jpg");
+  height: 40%;
+  width: 40%;
+}
+.imd3 {
+  background-image: url("../img/d4.jpg");
+  height: 40%;
+  width: 40%;
+}
+  .hero-image {
+    background-color: #ccccccf5;
+    height: 500px;
+    background-position: center;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+  }
+/* .bg_tnk {
+  background-image: url("../img/tnk2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
